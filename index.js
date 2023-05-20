@@ -62,4 +62,4 @@ client.on('ready', (c) => {
 })
 */
 
-client.login('MTEwOTMyNDY2MDkyMDgyMzgwOQ.G8q5Y2.pPNqBHF1O2R_drRtpG-Lz9snOrY1RfP2U7dCfo')
+client.login('Bot discord token')
