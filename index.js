@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits } = require('discord.js')
-const { getAllFilesSync } = require('aio-get-all-files')
+const { getAllFilesSync, getFilesSync } = require('aio-get-all-files')
 const path = require('path')
 
 const client = new Client({
@@ -8,7 +8,7 @@ const client = new Client({
 
 // Now the event and command
 
-const allEventFolder = getAllFilesSync(path.join(__dirname, 'events'), true);
+const allEventFolder = getFilesSync(path.join(__dirname, 'events'), true);
 
 for (const eventFolder of allEventFolder) {
     const eventName = eventFolder.replace(/\\/g, '/').split('/').pop()
